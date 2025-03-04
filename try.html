@@ -1,66 +1,120 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>This is my food blog</title>
-        <style>
-            body {
-                font-family: "Lucida Handwriting", cursive;
-                background-color: black;
-            }
-            h1 {
-                text-align: center;
-                color: white;
-                margin-top: 50px;
-            }
-            p {
-                text-align: center;
-                color: black; 
-                margin-top: 10px;
-                padding: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <p style="text-align: center;">
-            <a href="index.html" style="color: white; text-decoration: none; font-weight: bold; margin: 10px;">Home</a> 
-            <a href="made.html" style="color: white; text-decoration: none; font-weight: bold; margin: 10px;">Made</a> 
-            <a href="paid.html" style="color: white; text-decoration: none; font-weight: bold; margin: 10px;">Outside Food</a>
-        </p>
-        <h1> I really wanna get reservations to these</h1>
+<head>
+    <title>This is my food blog</title>
+    <style>
+        body {
+            font-family: "Lucida Handwriting", cursive;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
 
-        <p style="background-color: lightyellow;">
-            <img src="https://images.squarespace-cdn.com/content/v1/65983d57438d713cfc579485/64d02c0a-9dcc-4006-9319-03dc1e8aff4c/Collage+-+All+food.jpg" alt="Bungalow" width="50%">
-        </p>
-        <p style="background-color: white;">
-            Bungalow NYC
-        </p>
+        .navbar {
+            background-color: #d4af37;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3);
+        }
 
-        <p style="background-color: lightpink;">
-            <img src="https://pyxis.nymag.com/v1/imgs/aff/e44/34c72fa4a6081aa8c3614794162be3bc48-flippers-1.1x.rsocial.w1200.jpg" alt="Flippers" width="50%">
-        </p>
-        <p style="background-color: white;">
-            Flippers NYC
-        </p>
+        .navbar a {
+            color: black;
+            background-color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 10px;
+            padding: 12px 20px;
+            display: inline-block;
+            border-radius: 8px;
+        }
 
-        <p style="background-color: lightgreen;">
-            <img src="https://www.foodandwine.com/thmb/M6EuNJTfQ3h6lCMF7Eb-P4lQoN0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Largest-Din-Tai-Fung-Opens-FT-BLOG0724-Food-05-621542cc39f541e9bc783e09df3b59c2.jpg" alt="Din" width="50%">
-        </p>
-        <p style="background-color: white;">
-           Din Tai Fung NYC
-        </p>
+        .navbar a:hover {
+            background-color: #b8860b;
+            color: white;
+        }
 
-        <p style="background-color: lightslategrey;">
-            <img src="https://framerusercontent.com/images/pfRuHw0P5gsBQeUrO7MQLQbHDg.jpg" alt="Dorsia" width="50%">
-        </p>
-        <p style="background-color: white;">
-            Dorsia NYC
-        </p>
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 38px;
+            margin-top: 40px;
+            letter-spacing: 1.5px;
+        }
 
-        <p style="background-color: lightcoral;">
-            <img src="https://oceandrive.com/get/files/image/galleries/RAO_S_45.jpg" alt="Rao's" width="50%">
-        </p>
-        <p style="background-color: white;">
-            Rao's NYC
-        </p>
-    </body>
+        .restaurant-card {
+            padding: 20px;
+            border-radius: 12px;
+            margin: 30px auto;
+            width: 60%;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .restaurant-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+        }
+
+        .restaurant-img {
+            width: 60%;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            display: inline-block;
+        }
+
+        .restaurant-name {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .yellow { background-color: lightyellow; }
+        .pink { background-color: lightpink; }
+        .green { background-color: lightgreen; }
+        .grey { background-color: lightslategrey; }
+        .coral { background-color: lightcoral; }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="made.html">Made</a>
+        <a href="paid.html">Outside Food</a>
+    </div>
+
+    <h1>I Really Wanna Get Reservations to These</h1>
+
+    <div class="restaurant-card yellow">
+        <img class="restaurant-img" src="https://images.squarespace-cdn.com/content/v1/65983d57438d713cfc579485/64d02c0a-9dcc-4006-9319-03dc1e8aff4c/Collage+-+All+food.jpg" alt="Bungalow">
+        <p class="restaurant-name">Bungalow NYC</p>
+    </div>
+
+    <div class="restaurant-card pink">
+        <img class="restaurant-img" src="https://pyxis.nymag.com/v1/imgs/aff/e44/34c72fa4a6081aa8c3614794162be3bc48-flippers-1.1x.rsocial.w1200.jpg" alt="Flippers">
+        <p class="restaurant-name">Flippers NYC</p>
+    </div>
+
+    <div class="restaurant-card green">
+        <img class="restaurant-img" src="https://www.foodandwine.com/thmb/M6EuNJTfQ3h6lCMF7Eb-P4lQoN0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Largest-Din-Tai-Fung-Opens-FT-BLOG0724-Food-05-621542cc39f541e9bc783e09df3b59c2.jpg" alt="Din Tai Fung">
+        <p class="restaurant-name">Din Tai Fung NYC</p>
+    </div>
+
+    <div class="restaurant-card grey">
+        <img class="restaurant-img" src="https://framerusercontent.com/images/pfRuHw0P5gsBQeUrO7MQLQbHDg.jpg" alt="Dorsia">
+        <p class="restaurant-name">Dorsia NYC</p>
+    </div>
+
+    <div class="restaurant-card coral">
+        <img class="restaurant-img" src="https://oceandrive.com/get/files/image/galleries/RAO_S_45.jpg" alt="Rao's">
+        <p class="restaurant-name">Rao's NYC</p>
+    </div>
+
+</body>
 </html>

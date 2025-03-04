@@ -1,36 +1,95 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>This is my food blog</title>
-    </head>
-    <body>
-        <h1>Foods I have made and ate or paid and ate</h1>
-        <p>Hi, This is my favorite server about my favorite food from my favourite places. I love Indian foood being an indian but I am always excited about trying different flavors of food from all over the world! </p>
-        <p style="text-align: center;">
-            <a href="made.html" style="color: white; text-decoration: underline; font-weight: bold; font-size: 30px; margin: 10px;">Made</a> 
-            <a href="paid.html" style="color: white; text-decoration: underline; font-weight: bold; font-size: 30px; margin: 10px;">Outside Food</a> 
-            <a href="try.html" style="color: white; text-decoration: underline; font-weight: bold; font-size: 30px; margin: 10px;"> Wanna Try</a>
-        </p>
-        <p>
-            <img src="https://i.etsystatic.com/9684337/r/il/5c0f82/726795730/il_fullxfull.726795730_km9q.jpg" alt="Image" width="600">
-        </p>
-    </body>
+<head>
+    <title>This is my food blog</title>
     <style>
         body {
-            font-family: "Lucida Handwriting" , cursive;
+            font-family: "Lucida Handwriting", cursive;
             background-color: black;
+            margin: 0;
+            padding: 0;
         }
+
+        
+        .navbar {
+            background-color: #ff6600; 
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 15px;
+            padding: 12px 20px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #cc5500; 
+            color: yellow;
+        }
+
+        .navbar a:active {
+            color: #ffd700; 
+        }
+
         h1 {
             text-align: center;
             color: white;
             font-size: 40px;
-            margin-top: 50px;
+            margin-top: 30px;
         }
+
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px auto;
+            width: 60%;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
         p {
             text-align: center;
             font-size: 20px;
             color: white;
             margin-top: 20px;
         }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .food-img {
+            width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            display: inline-block;
+        }
     </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="made.html">Made</a>
+        <a href="paid.html">Outside Food</a>
+        <a href="try.html">Wanna Try</a>
+    </div>
+
+    <h1>Foods I have made and ate or paid and ate</h1>
+
+    <div class="content-box">
+        <p>Hi, This is my favorite server about my favorite food from my favourite places. I love Indian foood being an indian but I am always excited about trying different flavors of food from all over the world! </p>
+    </div>
+
+    <div class="image-container">
+        <img class="food-img" src="https://i.etsystatic.com/9684337/r/il/5c0f82/726795730/il_fullxfull.726795730_km9q.jpg" alt="Image">
+    </div>
+
+</body>
 </html>
