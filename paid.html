@@ -14,6 +14,9 @@
             background-color: #e63946;
             padding: 15px 0;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .navbar a {
@@ -23,7 +26,6 @@
             font-size: 20px;
             margin: 15px;
             padding: 12px 20px;
-            display: inline-block;
             border-radius: 8px;
             
         }
@@ -45,6 +47,10 @@
         }
 
         .food-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             padding: 20px;
             border-radius: 12px;
             margin: 30px auto;
@@ -61,7 +67,7 @@
             width: 50%;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-            display: inline-block;
+            display: flex;
         }
 
         .food-text {
@@ -81,6 +87,20 @@
         .cyan { background-color: lightcyan; }
         .seagreen { background-color: lightseagreen; }
         .violetred { background-color: palevioletred; }
+
+        @media (max-width: 600px) {
+            .food-card {
+                flex: 50%;
+                max-width: 80%;
+            }
+            .food-img {
+                flex: 100%;
+                max-width: 100%;
+            }
+            .navbar{
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
