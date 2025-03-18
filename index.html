@@ -1,95 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>This is my food blog</title>
-    <style>
-        body {
-            font-family: "Lucida Handwriting", cursive;
-            background-color: black;
-            margin: 0;
-            padding: 0;
-        }
-
-        
-        .navbar {
-            background-color: #ff6600; 
-            padding: 15px 0;
-            text-align: center;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 20px;
-            margin: 15px;
-            padding: 12px 20px;
-            display: inline-block;
-            border-radius: 5px;
-        }
-
-        .navbar a:hover {
-            background-color: #cc5500; 
-            color: yellow;
-        }
-
-        .navbar a:active {
-            color: #ffd700; 
-        }
-
-        h1 {
-            text-align: center;
-            color: white;
-            font-size: 40px;
-            margin-top: 30px;
-        }
-
-        .content-box {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 30px auto;
-            width: 60%;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-        }
-
-        p {
-            text-align: center;
-            font-size: 20px;
-            color: white;
-            margin-top: 20px;
-        }
-
-        .image-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .food-img {
-            width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-            display: inline-block;
-        }
-    </style>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <a href="made.html">Made</a>
-        <a href="paid.html">Outside Food</a>
-        <a href="try.html">Wanna Try</a>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h1>Sanjana Chowdary</h1>
+        <p>Creative Developer | Designer</p>
+        <img src="assets/saj2.png" alt="My Photo">
+    </section>
+    
+    <section id="about">
+        <div class="left">
+            <img src="assets/saj.jpeg" alt="Sanjana Chowdary">
+        </div>
+        <div class="right">
+            <h2>About Me</h2>
+            <p>I'm a junior studying Computer Science at NYU, focusing on UI/UX design and software development.</p>
+            <p>🌱 Currently diving deeper into user experience design, front-end development, and building intuitive interfaces.</p>
+            <p>💻 Technologies I love working with include Python, Java, HTML/CSS, React, and SQL.</p>
+            <p>💡 Passionate about design, algorithmic problem-solving, and creating products that bring joy to users.</p>
+            <p>💞️ Open to collaborating on UI/UX projects, front-end development, or anything creative that involves user-centered design.</p>
+            <p>🌿 Love growing plants, and my heart sinks a little if they don’t make it 😢.</p>
+            <p>🌅 Absolutely adore going on sunset walks—it’s my favorite way to unwind after a busy day.</p>
+            <p>🎨 In my free time, I enjoy exploring the world of UI/UX design, experimenting with new layouts, and creating engaging digital experiences.</p>
+            <p>📫 Feel free to reach out to me on GitHub or via LinkedIn if you'd like to collaborate or chat about design!</p>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project" id="project1">
+                <div class="projecttext">
+                <a href = "http://ec2-3-145-91-91.us-east-2.compute.amazonaws.com/"><h3>Project 1</h3></a>
+                <p>Collaborative ToDo List app</p>
+                </div>  
+            </div>
+            <div class="project" id = "project2">
+                <div class="projecttext">
+                <a href = "https://grouprr.myshopify.com/?_ab=0&_fd=0&_sc=1"><h3>Project 2</h3></a>
+                <p>Stealth Startup Groupr Grocery App Websitee</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h1>Foods I have made and ate or paid and ate</h1>
-
-    <div class="content-box">
-        <p>Hi, This is my favorite server about my favorite food from my favourite places. I love Indian foood being an indian but I am always excited about trying different flavors of food from all over the world! </p>
-    </div>
-
-    <div class="image-container">
-        <img class="food-img" src="https://i.etsystatic.com/9684337/r/il/5c0f82/726795730/il_fullxfull.726795730_km9q.jpg" alt="Image">
-    </div>
-
+    <section id="resume">
+        <h2>My Resume</h2>
+        <p>Click to preview or download my resume.</p>
+        <img src="assets/resume.png" alt="Resume Preview" class="resume-preview" onclick="openModal()">
+        <a href="assets/resume.pdf" download class="resume-button">Download Resume</a>
+        <div id="resume-modal" class="modal" onclick="closeModal()">
+            <img src="assets/resume.png" class="modal-content" alt="Full Resume">
+        </div>
+    </section>
+    
+    <section id="blogs">
+        <h2>Blogs</h2>
+        <h3>The Mind’s Maze: Understanding My Own Cognition</h3>
+        <div class="sample-text">
+            <p>Lately, I’ve been thinking a lot about how my brain works—how I remember things, make decisions, and even why I sometimes forget what I was just about to do. It’s something we rarely stop to consider, but cognition plays such a huge role in our daily lives.</p>
+    
+            <p>One of the most interesting things I’ve noticed is how unpredictable my memory can be. There are times when I can recall the most random details from years ago—like the smell of my grandmother’s kitchen or the exact words of a childhood song. And yet, I’ll walk into a room and completely forget why I’m there. It turns out, this isn’t just me being forgetful—it’s actually a cognitive phenomenon called the doorway effect, where our brains “reset” when we change environments. Realizing this made me feel a little less frustrated about those moments.</p>
+    
+            <p>Another thing I’ve become more aware of is how my brain makes decisions. I always thought I was a logical person, but the more I learn about cognition, the more I realize how much emotions influence my choices. Even when I try to be rational, my brain is constantly filtering information in ways I don’t even notice. For example, I recently caught myself scrolling through product reviews, only paying attention to the ones that confirmed what I already wanted to believe. That’s confirmation bias in action!</p>
+    
+            <p>One of the coolest things about cognition is that our brains are built to adapt and learn. Even as an adult, I love picking up new skills—whether it’s a hobby, a language, or just random facts. The concept of neuroplasticity, or the brain’s ability to change and grow, is proof that we’re never too old to learn something new.</p>
+    
+            <p>Understanding how my mind works has been eye-opening. It’s helped me be more patient with myself when I forget things, more mindful of how I make decisions, and more excited about learning new things. At the end of the day, cognition isn’t just an academic concept—it’s the invisible force shaping our everyday experiences, and that’s pretty amazing.</p>
+        </div>
+    </section>
+    
+    
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-icons">
+            <a href="https://www.instagram.com/lillillinu/" target="_blank">
+                <img src="assets/instagram.png" alt="Instagram">
+            </a>
+            <a href="dunno how to do this yet">
+                <img src="assets/gmail.png" alt="Email">
+            </a>
+            <a href="https://www.linkedin.com/in/sanjana-chowdary/" target="_blank">
+                <img src="assets/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Sanjana Chowdary. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
+
+<script>
+    function openModal() {
+        document.getElementById("resume-modal").style.display = "flex";
+    }
+
+    function closeModal() {
+        document.getElementById("resume-modal").style.display = "none";
+    }
+</script>
+
+<script>
+    window.onload = function () {
+        document.getElementById("resume-modal").style.display = "none";
+    };
+</script>
