@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="about.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body class="light">
+  <a href="landing.html" class="logo">Sanjana</a>
+
+  <nav class="top-nav">
+    <a href="about.html" class="active">About Me</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="about-page">
+    <div class="about-heading">
+      <div class="about-box pink-box">
+        <div id="typedtext"></div>
+      </div>
+      <div class="about-box blue-box">
+        <div id="typedtext2"></div>
+      </div>
+      <div class="about-box green-box">
+        <div id="typedtext3"></div>
+      </div>
+      <div class="about-box yellow-box">
+        <div id="typedtext4"></div>
+      </div>
+    </div>
+    
+    <div class="anime-illustration">
+      <lottie-player
+        src="./assets/me.json"
+        background="transparent"
+        speed="1"
+        style="width: 140px; height: 140px;"
+        loop
+        autoplay>
+      </lottie-player>
+    </div>
+  </section>
+  <script src="about.js"></script>
+</body>
+</html>

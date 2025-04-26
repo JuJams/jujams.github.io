@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #F75A5A;
+  background-image: url('assets/yellow.png');
+}
+
+html, body {
+  overflow: hidden;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff200;
+  transition: color 0.3s ease;
+  z-index: 10;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #0199ff;
+}
+
+body.dark .logo {
+  color: #FFC8DD;
+}
+
+.top-nav {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  gap: 24px;
+  z-index: 10;
+}
+
+.top-nav a {
+  color: #161411;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: border-bottom 0.2s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.top-nav a.active {
+  border-bottom: 2px solid currentColor;
+}
+
+.top-nav a:hover {
+  border-bottom: 2px solid currentColor;
+}
+
+body.dark .top-nav a {
+  color: #ffffff;
+}
+
+.about-page {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  min-height: 100vh;
+}
+
+.about-heading {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-gap: 40px;
+  padding: 100px 40px 40px 40px;
+  justify-content: center;
+  align-items: start;
+  height: auto;
+}
+
+.about-heading p {
+  margin-top: 16px;
+  font-size: 20px;
+  color: #343333;
+  max-width: 700px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.anime-illustration {
+  background-color: #dbffcb;
+  background-image: url('assets/yellow.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anime-illustration lottie-player {
+  width: 180px;
+  height: 180px;
+}
+
+.about-box {
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-8px);
+}
+
+
+#typedtext,
+#typedtext2,
+#typedtext3,
+#typedtext4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px;
+  max-width: 260px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.pink-box:hover {
+  box-shadow: 0 0 30px 12px rgba(255, 200, 221, 0.6);
+}
+
+.blue-box:hover {
+  box-shadow: 0 0 30px 12px rgba(189, 224, 254, 0.6);
+}
+
+.green-box:hover {
+  box-shadow: 0 0 30px 12px rgba(202, 255, 191, 0.6);
+}
+
+.yellow-box:hover {
+  box-shadow: 0 0 30px 12px rgba(253, 255, 182, 0.6);
+}
