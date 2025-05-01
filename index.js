@@ -93,7 +93,6 @@ function updateCarousel(index) {
 }
 
 updateCarousel(current);
-
 setInterval(() => {
   updateCarousel((current + 1) % getSlides().length);
 }, 10000);

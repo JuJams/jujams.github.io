@@ -6,15 +6,93 @@
   <title>Skills</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="projects.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a href="index.html" class="logo">Sanjana</a>
+  <a href="index.html" class="logo">Sanjana</a>
 
-    <nav class="top-nav">
-        <a href="about.html">About Me</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html" class="active">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  <nav class="top-nav">
+      <a href="about.html">About Me</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="coffee-cup-container">
+    <img src="./assets/coffee.png" alt="Coffee Cup" id="coffee-cup">
+  </div>
+
+  <div class="spill-area hidden">
+    <div class="hint-text">
+      click on spill to unspill or click an ice cube to explore!
+    </div>
+    <img src="./assets/spill.png" alt="Coffee Spill" id="spill" class="spill-img">
+    <div class="ice-cubes">
+      <img src="./assets/iceCube.png" class="ice-cube one" alt="Ice Cube 1"
+           data-title="Groupr"
+           data-text="<h4>Overview</h4>
+          <p>I interned at Groupr, a grocery delivery company that helps people in public housing get affordable groceries once a month. I worked on the frontend, building parts of the website that people actually use — like the sign-up forms, success messages, check-in tools, and account creation flow.</p>
+          <h4>Tech Stack</h4>
+          <p>The website is built on Shopify, so I used Liquid, HTML, CSS, and JavaScript to bring the designs to life. I turned Figma mockups into real pages that work well on phones and laptops.</p>
+          <h4>Interactive Experiences</h4>
+          <p>One of my favorite things I made was the animated sign-up process — depending on where someone lives, they see different screens. I also built a tool that lets staff and neighbors check in when they come to pick up groceries in bulk.</p>
+          <h4>UI and Visual Polish</h4>
+          <p>I got to do a lot of creative stuff too — like making buttons pop, adding scroll animations, building dark mode, and keeping everything looking smooth and clean.</p>
+          <h4>Shipping & Impact</h4>
+          <p>We tested things fast, fixed bugs quickly, and shipped real features that people use. I also helped with a referral system that gives people rewards when they invite their friends.</p>
+          <h4>What I Learned</h4>
+          <p>This was one of the first times I saw how design and development work together in the real world. It made me care a lot more about how things feel — not just how they work. Groupr taught me how to build with empathy and think about the people on the other side of the screen.</p>"
+           data-video="./assets/groupr.mp4">
+
+      <img src="./assets/iceCube.png" class="ice-cube two" alt="Ice Cube 2"
+           data-title="To-Do List App"
+           data-text="<h4>What It Is</h4>
+          <p>This project is a simple but powerful to-do list app that I built to practice backend skills. I used Python's Flask framework and an SQLite database to store tasks safely and reliably. Even though the app is minimal on the outside, a lot happens behind the scenes — it uses secure file storage, clean backend architecture, and a simple command-line interface for task management.</p>
+
+          <h4>How It Works</h4>
+          <p>The app lets users create new tasks, view their full task list, and delete completed ones easily. It's fast, lightweight, and feels smooth to use without unnecessary clutter.</p>
+
+          <h4>Extra Features</h4>
+          <p>I also explored extensions like smart task reminders, where the app could learn user behavior using libraries like Pandas and TensorFlow, and suggest what tasks to prioritize.</p>
+
+          <h4>What I Learned</h4>
+          <p>This project helped me understand how backend systems manage and secure data while delivering quick, responsive experiences. I learned how to design simple yet reliable backend flows and realized the importance of organizing backend logic cleanly — even for small tools. It also gave me ideas for how even basic utilities can be made smarter over time.</p>"
+           data-video="./assets/augmentedLibrary.mp4">
+
+      <img src="./assets/iceCube.png" class="ice-cube three" alt="Ice Cube 3"
+           data-title="Augmented Library"
+           data-text="<h4>What It Is</h4>
+          <p>The Augmented Library project is an interactive web experience I built to make exploring digital books more fun and visual. The idea was to move away from basic text lists and create a more engaging way to browse a library, where users could visually select books based on categories, covers, or themes.</p>
+
+          <h4>How It's Built</h4>
+          <p>I used HTML, CSS Grid, and JavaScript to make it dynamic and responsive. Each book is styled as a clickable card, and the layout changes based on what the user picks. It works great on both phones and desktops.</p>
+
+          <h4>Interactive Features</h4>
+          <p>I added hover animations, scroll effects, and real-time search filtering to make the experience feel smooth and immersive. It's meant to feel like you're walking through actual shelves, not just clicking links.</p>
+
+          <h4>What I Learned</h4>
+          <p>This project helped me practice building user-friendly interfaces with clean front-end logic. It also gave me new ideas — like using 3D models or audio snippets, or maybe even AR someday — to take interactive libraries even further.</p>"
+           data-video="./assets/augmentedLibrary.mp4">
+    </div>
+  </div>
+</div>
+  <div class="project-overlay hidden">
+    <img id="activeCube" src="./assets/iceCube.png" class="ice-cube overlay-close" alt="Back">
+    <div class="project-text">
+      <h2 class="project-title" id="projectTitle"></h2>
+      <p class="project-description" id="projectText"></p>
+    </div>
+    <div class="project-media">
+      <video id="projectVideo" autoplay loop muted>
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p class="overlay-hint">click on the ice cube to go back to the spill</p>
+    </div>
+  </div>
+  <script src="projects.js"></script>
 </body>
 </html>

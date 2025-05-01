@@ -54,10 +54,10 @@ body {
   position: absolute;
   top: 30px;
   left: 40px;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'DM Serif Text', serif;
   font-size: 36px;
   font-weight: 600;
-  color: #1e1bfa;
+  color: #343A40;
   transition: color 0.3s ease;
   z-index: 10;
   cursor: pointer;
