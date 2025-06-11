@@ -1,64 +1,174 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #f872bb;
-    background-image: url('assets/yellow.png');
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-image: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-  
+
+
+
 html, body {
-    overflow: hidden;
+  overflow: hidden;
 
 }
 .logo {
-    position: absolute;
-    top: 30px;
-    left: 40px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 36px;
-    font-weight: 600;
-    color: #fff200;
-    transition: color 0.3s ease;
-    z-index: 10;
-    cursor: pointer;
-    text-decoration: none;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-family: 'DM Serif Text', cursive;
+  font-size: 36px;
+  font-weight: 600;
+  color: #000000;
+  transition: color 0.3s ease;
+  z-index: 10;
+  cursor: pointer;
+  text-decoration: none;
 }
-  
-  .logo:hover {
-    color: #0199ff;
-  }
-  
-  body.dark .logo {
-    color: #FFC8DD;
-  }
-  
-  .top-nav {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    gap: 24px;
-    z-index: 10;
-  }
-  
-  .top-nav a {
-    color: #161411;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    transition: border-bottom 0.2s ease;
-    border-bottom: 2px solid transparent;
-  }
-  
-  .top-nav a.active {
-    border-bottom: 2px solid currentColor;
-  }
-  
-  .top-nav a:hover {
-    border-bottom: 2px solid currentColor;
-  }
-  
-  body.dark .top-nav a {
-    color: #ffffff;
-  }
+
+.logo:hover {
+  color: #ff0101;
+}
+
+body.dark .logo {
+  color: #FFC8DD;
+}
+
+.top-nav {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  gap: 24px;
+  z-index: 10;
+}
+
+.top-nav a {
+  color: #161411;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: border-bottom 0.2s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.top-nav a.active {
+  border-bottom: 2px solid currentColor;
+}
+
+.top-nav a:hover {
+  border-bottom: 2px solid currentColor;
+}
+
+body.dark .top-nav a {
+  color: #ffffff;
+}
+
+.contact-form-container {
+background-color: #f6eee3;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+border-radius: 10px;
+box-shadow: -4px 0 12px rgba(0, 0, 0, 0.2);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 1;
+padding: 40px;
+}
+
+.contact-form-container form {
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 8px;
+font-family: 'Inter', sans-serif;
+}
+
+.contact-form-container button {
+background-color: #1094d7;
+color: white;
+border: none;
+padding: 12px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s ease;
+}
+
+.contact-form-container button:hover {
+background-color: #67c8f8;
+}
+
+#bg-video {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+object-fit: cover;
+z-index: -1;
+}
+
+.bottle {
+position: absolute;
+width: 80px;
+
+
+}
+
+.bottle1 {
+top: 40%;
+left: 5%;
+animation: float 3s ease-in-out infinite;
+}
+
+.bottle2 {
+bottom: 15%;
+right: 10%;
+animation: float2 3.5s ease-in-out infinite;
+}
+
+.bottle3 {
+top: 20%;
+right: 20%;
+animation: float3 4s ease-in-out infinite;
+}
+
+@keyframes float {
+0%, 100% {
+  transform: translateY(10px);
+}
+50% {
+  transform: translateY(-10px);
+}
+}
+
+@keyframes float2 {
+0%, 100% {
+  transform: translateY(10px) rotate(-20deg);
+}
+50% {
+  transform: translateY(-10px) rotate(-40deg);
+}
+}
+
+@keyframes float3 {
+0%, 100% {
+  transform: translateY(10px) rotate(10deg);
+}
+50% {
+  transform: translateY(-10px) rotate(20deg);
+}
+}

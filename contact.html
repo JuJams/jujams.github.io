@@ -6,14 +6,40 @@
   <title>Skills</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="contact.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
 </head>
-<body>
-    <a href="landing.html" class="logo">Sanjana</a>
-    <nav class="top-nav">
-        <a href="about.html">About Me</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html" class="active">Contact</a>
-    </nav>
+<body class="contact-page">
+  <video autoplay muted loop id="bg-video">
+    <source src="assets/waves.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <img src="assets/bottle.png" alt="Bottle" class="bottle bottle1">
+  <img src="assets/bottle.png" alt="Bottle" class="bottle bottle2">
+  <img src="assets/bottle.png" alt="Bottle" class="bottle bottle3">
+  <a href="index.html" class="logo">Sanjana</a>
+  <nav class="top-nav">
+    <a href="about.html">About Me</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <div class="contact-form-container">
+    <form action="https://formspree.io/f/meogewel" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
 </body>
 </html>
